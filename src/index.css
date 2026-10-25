@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-teal-50: #f7f6ef;
+  --color-teal-100: #ebe8d8;
+  --color-teal-200: #d8d3b8;
+  --color-teal-300: #c5bd98;
+  --color-teal-400: #b2a879;
+  --color-teal-500: #a49a68;
+  --color-teal-600: #94895a;
+  --color-teal-700: #776d46;
+  --color-teal-800: #5d5539;
+  --color-teal-900: #47412e;
+  --color-teal-950: #2c291d;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent auto-zoom on iOS Safari & Mobile Chrome when focusing input fields */
+input,
+select,
+textarea {
+  font-size: 16px !important;
+  touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+
+  input,
+  select,
+  textarea {
+    font-size: 0.875rem !important;
+    /* 14px for compact desktop UI */
+  }
+
+  input.text-xs,
+  select.text-xs,
+  textarea.text-xs {
+    font-size: 0.75rem !important;
+  }
+}
+
+button {
+  touch-action: manipulation;
+}

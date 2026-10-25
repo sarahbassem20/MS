@@ -1,0 +1,6 @@
+{
+  "name": "Clinic Management System",
+  "description": "Comprehensive Clinic Management System with role-based access, task instances with snapshots, room-based doctor scheduling, weekly matrix views, and full Arabic/English bilingual support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
