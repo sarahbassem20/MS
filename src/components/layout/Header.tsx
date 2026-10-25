@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import { useTheme } from "../../context/ThemeContext";
 import { useClinic } from "../../context/ClinicContext";
 import { Badge } from "../common/Badge";
+import logo from "../../../assets/logo.jpg";
 import {
   Globe,
   Building2,
@@ -30,6 +31,7 @@ export const Header: React.FC<{ onToggleSidebar?: () => void }> = ({ onToggleSid
       <div className="flex items-center justify-between px-3 sm:px-6 h-16 max-w-full">
         {/* Left Side: Mobile Menu Button & Clinic Selector */}
         <div className="flex items-center gap-2 sm:gap-4 min-w-0 flex-1 me-2">
+          <img src={logo} alt="Mystique Clinic Logo" />
           <button
             onClick={onToggleSidebar}
             className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer shrink-0"
